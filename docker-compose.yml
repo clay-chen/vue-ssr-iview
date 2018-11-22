@@ -7,5 +7,4 @@ services:
       - .:/root/web
     ports:
       - 8080:8080
-    command: sh ./start.sh >> /dev/null
     restart: always
