@@ -21,9 +21,9 @@ const Dropdown = () => import('../pages/dropdown.vue');
 const Page = () => import('../pages/page.vue');
 const Breadcrumb = () => import('../pages/breadcrumb.vue');
 const Badge = () => import('../pages/badge.vue');
-const Anchor = () => import('../pages/badge.vue');
+const Anchor = () => import('../pages/anchor.vue');
 const Steps = () => import('../pages/steps.vue');
-const LoadingBar = () => import('../pages/badge.vue'); // TODO
+const LoadingBar = () => import('../pages/loading-bar.vue');
 const Input = () => import('../pages/input.vue');
 const Radio = () => import('../pages/radio.vue');
 const Checkbox = () => import('../pages/checkbox.vue');
