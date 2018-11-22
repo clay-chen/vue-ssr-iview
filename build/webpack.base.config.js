@@ -7,9 +7,7 @@ const {VueLoaderPlugin} = require('vue-loader')
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  devtool: isProd
-    ? false
-    : '#cheap-module-source-map',
+  devtool: isProd ? false : '#cheap-module-source-map',
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
@@ -38,7 +36,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|ttf|woff)$/,
         loader: 'url-loader',
         options: {
           limit: 10000,

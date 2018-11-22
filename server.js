@@ -69,6 +69,7 @@ app.use('/dist', serve('./dist', true))
 app.use('/public', serve('./public', true))
 app.use('/manifest.json', serve('./manifest.json', true))
 app.use('/service-worker.js', serve('./dist/service-worker.js'))
+app.use('/iview.css', serve('./node_modules/iview/dist/styles/iview.css'))
 
 // since this app has no user-specific content, every page is micro-cacheable.
 // if your app involves user-specific content, you need to implement custom
@@ -98,7 +99,7 @@ function render (req, res) {
   }
 
   const context = {
-    title: 'Vue HN 2.0', // default title
+    title: 'Vue Laputa 1.0', // default title
     url: req.url
   }
   renderer.renderToString(context, (err, html) => {
