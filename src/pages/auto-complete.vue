@@ -4,7 +4,7 @@
             icon="ios-search"
             placeholder="input here"
             style="width:300px">
-        <div class="demo-auto-complete-item" v-for="item in data4">
+        <div class="demo-auto-complete-item" v-for="(item, index) in data4" :key="index">
             <div class="demo-auto-complete-group">
                 <span>{{ item.title }}</span>
                 <a href="https://www.google.com/search?q=iView" target="_blank">更多</a>

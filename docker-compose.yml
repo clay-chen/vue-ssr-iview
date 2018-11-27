@@ -1,10 +1,11 @@
-version: '2'
+version: "2"
 
 services:
-  image: hub.c.163.com/library/node:8.4
-  volumes:
-    - ../:/root/web
-  port:
-    - 8080:8080
-  command: "cd /root/web && npm start"
-  restart: always
+  web:
+    image: hub.c.163.com/library/node:8.4
+    volumes:
+      - ../:/root/web
+    ports:
+      - 8080:8080
+    command: cnpm install && npm start
+    restart: always
