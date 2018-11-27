@@ -1,7 +1,7 @@
 <template>
   <Row>
     <Col span="12">
-      <ColorPicker v-model="color4" recommend></ColorPicker>
+      <ColorPicker v-model="color4" recommend/>
     </Col>
     <Col span="12">
       <ColorPicker v-model="color5" :colors="colors"/>
