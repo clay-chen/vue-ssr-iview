@@ -2,10 +2,12 @@ version: "2"
 
 services:
   web:
-    image: hub.c.163.com/library/node:8.4
+    # image: hub.c.163.com/library/node:8.4
+    build: docker
+    container_name: vue-ssr-iview
     volumes:
-      - ../:/root/web
+      - .:/root/web
     ports:
       - 8080:8080
-    command: cnpm install && npm start
+    command: tail -f /dev/null
     restart: always
